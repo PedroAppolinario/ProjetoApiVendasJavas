@@ -54,7 +54,7 @@ public class ClienteService {
         find(id);
         try{
             clienteRepository.deleteById(id);
-        } catch (DataIntegrityViolationException) {
+        } catch (DataIntegrityViolationException e){
             throw new DataIntegrityViolationException("Não é possível exluir um cliente com dados vinculados");
         }
 

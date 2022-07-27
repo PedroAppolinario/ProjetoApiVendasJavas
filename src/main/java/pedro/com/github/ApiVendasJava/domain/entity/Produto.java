@@ -23,7 +23,7 @@ public class Produto implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "titulo", length = 100)
+    @Column(name = "nome", length = 100)
     @NotEmpty(message = "Campo titulo é obrigatório")
     private String titulo;
 
